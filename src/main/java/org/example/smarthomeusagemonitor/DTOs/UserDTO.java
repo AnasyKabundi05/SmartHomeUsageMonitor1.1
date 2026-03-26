@@ -1,6 +1,6 @@
-package com.example.demo.DTOs;
+package org.example.smarthomeusagemonitor.DTOs;
 
-import com.example.demo.domain.User;
+import org.example.smarthomeusagemonitor.domain.User;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

@@ -1,8 +1,8 @@
-package com.example.demo.service;
+package org.example.smarthomeusagemonitor.service;
 
-import com.example.demo.DTOs.UserDTO;
-import com.example.demo.domain.User;
-import com.example.demo.repository.UserRepository;
+import org.example.smarthomeusagemonitor.DTOs.UserDTO;
+import org.example.smarthomeusagemonitor.domain.User;
+import org.example.smarthomeusagemonitor.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

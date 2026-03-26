@@ -1,6 +1,6 @@
-package com.example.demo.repository;
+package org.example.smarthomeusagemonitor.repository;
 
-import com.example.demo.domain.Appliance;
+import org.example.smarthomeusagemonitor.domain.Appliance;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ApplianceRepository extends JpaRepository<Appliance, Long> {

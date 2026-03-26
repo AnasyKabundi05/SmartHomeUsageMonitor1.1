@@ -1,9 +1,9 @@
-package com.example.demo.service;
+package org.example.smarthomeusagemonitor.service;
 
-import com.example.demo.domain.Recommendation;
-import com.example.demo.domain.UsageLog;
-import com.example.demo.repository.RecommendationRepository;
-import com.example.demo.repository.UsageLogRepository;
+import org.example.smarthomeusagemonitor.domain.Recommendation;
+import org.example.smarthomeusagemonitor.domain.UsageLog;
+import org.example.smarthomeusagemonitor.repository.RecommendationRepository;
+import org.example.smarthomeusagemonitor.repository.UsageLogRepository;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;

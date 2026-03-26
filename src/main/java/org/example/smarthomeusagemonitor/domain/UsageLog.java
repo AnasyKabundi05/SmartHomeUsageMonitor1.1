@@ -1,4 +1,4 @@
-package com.example.demo.domain;
+package org.example.smarthomeusagemonitor.domain;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;

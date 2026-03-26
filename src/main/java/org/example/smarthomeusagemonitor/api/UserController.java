@@ -1,9 +1,8 @@
-package com.example.demo.api;
+package org.example.smarthomeusagemonitor.api;
 
-import com.example.demo.DTOs.UserDTO;
-import com.example.demo.domain.User;
-import com.example.demo.repository.UserRepository;
-import com.example.demo.service.UserService;
+import org.example.smarthomeusagemonitor.DTOs.UserDTO;
+import org.example.smarthomeusagemonitor.domain.User;
+import org.example.smarthomeusagemonitor.service.UserService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

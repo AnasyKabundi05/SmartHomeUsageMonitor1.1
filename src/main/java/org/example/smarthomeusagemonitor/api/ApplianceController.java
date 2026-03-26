@@ -1,8 +1,8 @@
-package com.example.demo.api;
+package org.example.smarthomeusagemonitor.api;
 
-import com.example.demo.DTOs.ApplianceDTO;
-import com.example.demo.domain.Appliance;
-import com.example.demo.service.ApplianceService;
+import org.example.smarthomeusagemonitor.DTOs.ApplianceDTO;
+import org.example.smarthomeusagemonitor.domain.Appliance;
+import org.example.smarthomeusagemonitor.service.ApplianceService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 

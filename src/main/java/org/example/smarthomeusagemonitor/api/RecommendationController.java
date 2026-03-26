@@ -1,7 +1,7 @@
-package com.example.demo.api;
+package org.example.smarthomeusagemonitor.api;
 
-import com.example.demo.domain.Recommendation;
-import com.example.demo.service.RecommendationService;
+import org.example.smarthomeusagemonitor.domain.Recommendation;
+import org.example.smarthomeusagemonitor.service.RecommendationService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
