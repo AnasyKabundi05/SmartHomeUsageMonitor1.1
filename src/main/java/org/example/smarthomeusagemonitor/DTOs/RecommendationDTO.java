@@ -1,4 +1,4 @@
-package com.example.demo.DTOs;
+package org.example.smarthomeusagemonitor.DTOs;
 
 import org.example.smarthomeusagemonitor.domain.Recommendation;
 import lombok.Getter;
@@ -14,12 +14,10 @@ public class RecommendationDTO {
     private Long recommendationId;
     private String message;
     private double potentialSavings;
-    private LocalDate createdAt;
 
-    public RecommendationDTO(Recommendation recommendation){
-        this.recommendationId = recommendation.getRecommendationId();
-        this.message = recommendation.getMessage();
-        this.potentialSavings = recommendation.getPotentialSavings();
-        this.createdAt = recommendation.getCreatedAt();
+    public RecommendationDTO(Recommendation rec) {
+        this.recommendationId = rec.getRecommendationId();
+        this.message = rec.getMessage();
+        this.potentialSavings = rec.getPotentialSavings();
     }
 }

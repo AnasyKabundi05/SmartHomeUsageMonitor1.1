@@ -1,6 +1,6 @@
 package org.example.smarthomeusagemonitor.api;
 
-import org.example.smarthomeusagemonitor.DTOs.UserDTO;
+import org.example.smarthomeusagemonitor.DTOs.*;
 import org.example.smarthomeusagemonitor.domain.User;
 import org.example.smarthomeusagemonitor.service.UserService;
 import org.springframework.web.bind.annotation.*;
@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:5173")
 @RequestMapping("/api/user")
 public class UserController {
 

@@ -40,6 +40,7 @@ public class UsageLogService {
 
         usageLog.setCalculatedKwh(Kwh);
         usageLog.setCalculatedCost(weekly);
+        usageLog.setUser(appliance.getUser());
 
         appliance.getUsageLogs().add(usageLog);
 

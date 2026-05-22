@@ -11,14 +11,19 @@ import java.time.LocalDate;
 @Setter
 @NoArgsConstructor
 public class UsageLogDTO {
-    private Long usageId;
+
+    private Long usageLogId;
+    private Long userId;
+    private Long applianceId;
     private double hoursUsed;
     private LocalDate date;
     private double calculatedKwh;
     private double calculatedCost;
 
     public UsageLogDTO(UsageLog usageLog){
-        this.usageId = usageLog.getUsageLogId();
+        this.usageLogId = usageLog.getUsageLogId();
+        this.userId = usageLog.getUser().getUserId();
+        this.applianceId = usageLog.getAppliance().getApplianceId();
         this.hoursUsed = usageLog.getHoursUsed();
         this.date = usageLog.getDate();
         this.calculatedCost = usageLog.getCalculatedCost();

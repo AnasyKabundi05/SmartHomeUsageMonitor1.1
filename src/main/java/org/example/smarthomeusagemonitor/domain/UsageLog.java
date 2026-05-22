@@ -6,7 +6,6 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,9 +16,11 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 public class UsageLog {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long usageLogId;
+
     private double hoursUsed;
     private LocalDate date;
     private double calculatedKwh;
@@ -29,6 +30,11 @@ public class UsageLog {
     @JoinColumn(name = "appliance_id")
     @JsonBackReference("usageLog-appliance")
     private Appliance appliance;
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "user_id")
+    @JsonBackReference("usageLog-user")
+    private User user;
 
     @OneToMany(mappedBy = "usageLog", cascade = CascadeType.ALL)
     @JsonManagedReference("usageLog-recommendation")

@@ -1,5 +1,6 @@
 package org.example.smarthomeusagemonitor.api;
 
+import org.example.smarthomeusagemonitor.DTOs.RecommendationDTO;
 import org.example.smarthomeusagemonitor.domain.Recommendation;
 import org.example.smarthomeusagemonitor.service.RecommendationService;
 import org.springframework.web.bind.annotation.*;
@@ -7,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:5173")
 @RequestMapping("/api/recommendation")
 public class RecommendationController {
 
@@ -24,6 +26,11 @@ public class RecommendationController {
     @PostMapping("/{usageLogId}")
     public Recommendation createRecommendation(@PathVariable Long usageLogId){
         return recommendationService.createRecommendation(usageLogId);
+    }
+
+    @GetMapping("/{usageLogId}")
+    public List<RecommendationDTO> getRecommendationsByUsageLog(@PathVariable Long usageLogId) {
+        return recommendationService.getRecommendationsByUsageLog(usageLogId);
     }
 
     @DeleteMapping("/{recommendationId}")

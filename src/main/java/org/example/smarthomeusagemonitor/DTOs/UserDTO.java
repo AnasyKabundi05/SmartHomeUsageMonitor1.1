@@ -1,9 +1,9 @@
 package org.example.smarthomeusagemonitor.DTOs;
 
-import org.example.smarthomeusagemonitor.domain.User;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.example.smarthomeusagemonitor.domain.User;
 
 @Getter
 @Setter
@@ -18,4 +18,5 @@ public class UserDTO {
         this.email = user.getEmail();
         this.name = user.getName();
     }
+
 }
