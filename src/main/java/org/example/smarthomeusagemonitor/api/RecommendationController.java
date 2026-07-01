@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "*")
+@RequestMapping("/api/recommendation")
 public class RecommendationController {
 
     private final RecommendationService recommendationService;
@@ -22,12 +23,12 @@ public class RecommendationController {
         return recommendationService.getAllRecommendations();
     }
 
-    @PostMapping("/{usageLogId}")
+    @PostMapping("/usage/{usageLogId}")
     public Recommendation createRecommendation(@PathVariable Long usageLogId){
         return recommendationService.createRecommendation(usageLogId);
     }
 
-    @GetMapping("/{usageLogId}")
+    @GetMapping("/usage/{usageLogId}")
     public List<RecommendationDTO> getRecommendationsByUsageLog(@PathVariable Long usageLogId) {
         return recommendationService.getRecommendationsByUsageLog(usageLogId);
     }
@@ -37,3 +38,4 @@ public class RecommendationController {
         recommendationService.deleteRecommendationById(recommendationId);
     }
 }
+
