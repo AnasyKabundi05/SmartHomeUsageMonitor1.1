@@ -14,10 +14,10 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
-                        .allowedOrigins("https://frontenddashboard-c114a1gs6-anasykabundi00-3939s-projects.vercel.app")
+                        .allowedOriginPatterns("https://frontenddashboard-c114a1gs6-anasykabundi00-3939s-projects.vercel.app")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
-                        .allowCredentials(false);
+                        .allowCredentials(true);
             }
         };
     }
